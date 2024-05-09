@@ -37,6 +37,8 @@ public class CommentRepository {
         }
     }
 
+    
+
     public List<Comment> getAll(int bookId) {
         List<Comment> commentList = new ArrayList<>();
         String query = "SELECT bookId, userId, comment FROM comments WHERE bookId = " + bookId;
